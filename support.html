@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reedr — Support</title>
+    <meta name="description" content="Help with Reedr: adding FB2 books, why a recap has not appeared yet, and how to get in touch.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(180deg, #262c54 0%, #14172e 100%);
+            min-height: 100vh;
+        }
+        .hero { text-align: center; padding: 60px 20px 40px; color: #f4ede0; }
+        .app-icon {
+            width: 120px; height: 120px; border-radius: 27px;
+            margin: 0 auto 30px; display: block;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+        }
+        h1 { font-size: 2.5em; margin-bottom: 15px; font-weight: 700; }
+        .tagline { font-size: 1.2em; opacity: 0.88; margin-bottom: 10px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+        .shots {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px; padding: 10px 0 30px;
+        }
+        .shots img {
+            width: 100%; height: auto; border-radius: 18px; display: block;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+        }
+        .card {
+            background: white; border-radius: 16px; padding: 40px;
+            margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+        .card h2 { text-align: center; margin-bottom: 30px; color: #1d1d1f; }
+        .card h3 { color: #1d1d1f; margin: 28px 0 10px; font-size: 1.1em; }
+        .card p { margin-bottom: 14px; }
+        .card ul { margin: 0 0 14px 22px; }
+        .card li { margin-bottom: 8px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .feature { text-align: center; }
+        .feature-icon { font-size: 40px; margin-bottom: 15px; }
+        .feature h3 { font-size: 1.1em; margin: 0 0 8px; color: #1d1d1f; }
+        .feature p { font-size: 0.95em; color: #86868b; }
+        .privacy-note { text-align: center; color: #14172e; background: #f6d79a;
+            border-radius: 12px; padding: 18px 24px; font-weight: 500; }
+        .links { text-align: center; padding: 20px; }
+        .links a { color: rgba(244,237,224,0.85); text-decoration: none; margin: 0 15px; font-size: 0.95em; }
+        .links a:hover { color: #f4ede0; text-decoration: underline; }
+        .meta { color: #86868b; font-size: 0.9em; margin-top: 24px; }
+        a { color: #1a4fd6; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Support</h1>
+        <p class="tagline">Reedr — FB2 Reader</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>Common questions</h2>
+
+            <h3>How do I add a book?</h3>
+            <p>Tap <strong>+</strong> in the library and pick an <code>.fb2</code> file, or open one
+               from Files, Mail or Safari and choose Reedr from the share sheet. Reedr keeps its own
+               copy, so the book stays readable even if you move or delete the original.</p>
+
+            <h3>My book is a .zip — will it open?</h3>
+            <p>Yes. Zipped FB2 books open directly; Reedr finds the book inside the archive.</p>
+
+            <h3>The text came out as gibberish</h3>
+            <p>That would be a bug, not your file. FB2 books are often written in windows-1251 rather
+               than Unicode and Reedr handles that, but the format is used loosely in the wild. Email
+               a description of what you saw and which book it was, and it will be looked at.</p>
+
+            <h3>Where is the recap?</h3>
+            <p>Two reasons it may not be there yet:</p>
+            <ul>
+                <li><strong>You are near the start of the chapter.</strong> There is nothing to remind
+                    you of that is not still on the screen, so Reedr stays quiet.</li>
+                <li><strong>It is still being written.</strong> The recap is made while you read, on
+                    the device, and on a long chapter the first one takes a little time. The line
+                    appears by itself when it is ready — reading is never held up for it.</li>
+            </ul>
+
+            <h3>Why is my recap shorter than the screenshots?</h3>
+            <p>Written recaps use Apple Intelligence, which needs a recent device and iOS 26. Without
+               it, Reedr still builds a recap — it picks out the chapter’s own sentences and the names
+               in them. It reads differently, and it works on every device Reedr installs on.</p>
+
+            <h3>Does the recap spoil the book?</h3>
+            <p>No. It only ever describes pages you have already read, never anything ahead of you.</p>
+
+            <h3>Can I read the same book on another device?</h3>
+            <p>Reedr keeps books on the device you added them to. Add the file on each device you read
+               on; your place is kept separately on each.</p>
+
+            <h2>Still stuck?</h2>
+            <p>Email <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a> with the
+               device, the iOS version and what you were doing. Please describe the book rather than
+               attaching it.</p>
+        </div>
+    </div>
+    <div class="links">
+        <a href="index.html">Reedr</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a>
+    </div>
+</body>
+</html>

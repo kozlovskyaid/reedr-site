@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reedr — FB2 Reader with Chapter Recaps for iPhone & iPad</title>
+    <meta name="description" content="Reedr reads FB2 books and keeps a short recap of the chapter so far at the top of the page, written on your device. Books and recaps stay with you, and it works offline.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(180deg, #262c54 0%, #14172e 100%);
+            min-height: 100vh;
+        }
+        .hero { text-align: center; padding: 60px 20px 40px; color: #f4ede0; }
+        .app-icon {
+            width: 120px; height: 120px; border-radius: 27px;
+            margin: 0 auto 30px; display: block;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+        }
+        h1 { font-size: 2.5em; margin-bottom: 15px; font-weight: 700; }
+        .tagline { font-size: 1.2em; opacity: 0.88; margin-bottom: 10px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+        .shots {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px; padding: 10px 0 30px;
+        }
+        .shots img {
+            width: 100%; height: auto; border-radius: 18px; display: block;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+        }
+        .card {
+            background: white; border-radius: 16px; padding: 40px;
+            margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+        .card h2 { text-align: center; margin-bottom: 30px; color: #1d1d1f; }
+        .card h3 { color: #1d1d1f; margin: 28px 0 10px; font-size: 1.1em; }
+        .card p { margin-bottom: 14px; }
+        .card ul { margin: 0 0 14px 22px; }
+        .card li { margin-bottom: 8px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .feature { text-align: center; }
+        .feature-icon { font-size: 40px; margin-bottom: 15px; }
+        .feature h3 { font-size: 1.1em; margin: 0 0 8px; color: #1d1d1f; }
+        .feature p { font-size: 0.95em; color: #86868b; }
+        .privacy-note { text-align: center; color: #14172e; background: #f6d79a;
+            border-radius: 12px; padding: 18px 24px; font-weight: 500; }
+        .links { text-align: center; padding: 20px; }
+        .links a { color: rgba(244,237,224,0.85); text-decoration: none; margin: 0 15px; font-size: 0.95em; }
+        .links a:hover { color: #f4ede0; text-decoration: underline; }
+        .meta { color: #86868b; font-size: 0.9em; margin-top: 24px; }
+        a { color: #1a4fd6; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="Reedr app icon" class="app-icon">
+        <h1>Reedr — FB2 Reader</h1>
+        <p class="tagline">Picks the thread of the chapter back up for you.</p>
+        <p class="tagline">Reading on iPhone and iPad. Offline.</p>
+    </div>
+    <div class="container">
+        <div class="shots">
+            <img src="shots/1-recap.jpg" alt="A recap of the chapter so far at the top of the page">
+            <img src="shots/2-reading.jpg" alt="Reading a book in Reedr">
+            <img src="shots/3-library.jpg" alt="The Reedr library">
+        </div>
+
+        <div class="card">
+            <h2>Put a book down for a week. Pick it up mid-chapter.</h2>
+            <p>You know the feeling: you were four pages into a chapter, something interrupted, and now
+               three names have turned up and you are not sure which of them stole the ledger.</p>
+            <p>Reedr keeps a short account of what has happened <strong>since the current chapter
+               began, up to exactly where you are</strong>. It sits on one line at the top of the page.
+               Tap it and you get the whole recap, along with every character who has appeared in it
+               and what they were doing.</p>
+            <p>It is written while you read, never in front of you: the line appears when it is ready
+               and nothing waits for it.</p>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📖</div>
+                    <h3>So Far in This Chapter</h3>
+                    <p>A recap from the chapter’s first line to your place in it, with the cast.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Written on Your Device</h3>
+                    <p>Apple Intelligence writes it locally. Your book stays with you.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Real FB2 Files</h3>
+                    <p>Plain <code>.fb2</code> and zipped books, including the windows-1251 ones.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔖</div>
+                    <h3>Chapters and Parts</h3>
+                    <p>The table of contents exactly as the book nests it, and your place kept.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔤</div>
+                    <h3>Set the Page</h3>
+                    <p>Serif or sans, your size, your line spacing, light or dark.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✈️</div>
+                    <h3>No Account, No Network</h3>
+                    <p>Nothing to sign in to. Works with the radio off.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-note">
+            Books, your place in them and every recap stay on your device.
+        </div>
+    </div>
+    <div class="links">
+        <a href="index.html">Reedr</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a>
+    </div>
+</body>
+</html>
